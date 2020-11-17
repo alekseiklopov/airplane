@@ -6,20 +6,19 @@
 
 int main()
 {
-  double v_0 = 1;
-  double theta_0 = 3.14 * 1 / 180;
-  double timestep = 0.1;
-  Airplane<double> airplane = Airplane<double>(v_0=v_0, theta_0=theta_0, timestep=timestep);
+  Airplane<double> airplane = Airplane<double>(0, 0, 1, 3.14*1/180);
 
-  for (int i = 0; i != 100; ++i)
+  for (int i = 0; i != 1000; ++i)
   {
     std::cout <<
     "Time=" << airplane.get_t() << "; " <<
     "v=" << airplane.get_v() << "; " <<
-    "theta=" << airplane.get_theta() * 180 / 3.14 <<
+    "theta=" << airplane.get_theta() * 180 / 3.14 << "; " <<
+    "x=" << airplane.get_x() << "; " <<
+    "y=" << airplane.get_y() << "; " <<
     std::endl;
     airplane.do_time_step();
-    sleep(1);
+    usleep(100000);
   }
 
   return 0;
