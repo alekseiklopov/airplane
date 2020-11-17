@@ -9,8 +9,8 @@ struct Airplane
     this->set_constants();
   }
 
-  void set_constants(T timestep = 0.1, T rho = 1.225, T m = 1, T F = 1,
-    T Cx = 1, T Cy = 1, T g = 9.8)
+  void set_constants(T timestep = 0.1, T rho = 0.1225, T m = 200, T F = 18,
+    T Cx = 0.04, T Cy = 0.2, T g = 9.8)
   {
     this->timestep = timestep;
     this->rho = rho;
