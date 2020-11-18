@@ -6,7 +6,7 @@
 
 int main()
 {
-  Airplane<double> airplane = Airplane<double>(0, 10000, 100, 3.14*6/180);
+  Airplane<double> airplane = Airplane<double>(0, 1000, 20, 3.14*6/180);
 
   for (int i = 0; i != 1000; ++i)
   {
