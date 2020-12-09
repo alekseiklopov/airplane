@@ -8,7 +8,7 @@ int main()
 {
   Airplane<double> airplane = Airplane<double>(0, 1000, 20, 3.14*6/180);
 
-  for (int i = 0; i != 1000; ++i)
+  for (int i = 0; i != 100000; ++i)
   {
     if (airplane.get_y() < 0)
     {
@@ -22,7 +22,7 @@ int main()
     "y=" << airplane.get_y() <<
     std::endl;
     airplane.do_time_step();
-    usleep(100000);
+    usleep(10000);
   }
 
   return 0;
