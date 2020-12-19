@@ -1,10 +1,7 @@
 from math import sin, cos
 
-<<<<<<< HEAD
 DEG_TO_RAD = 3.14159 / 180
 
-=======
->>>>>>> 46875c663b663593340aa23135cb45f032da82de
 
 class Glider:
     def __init__(self, x, y, v, theta):
@@ -12,22 +9,15 @@ class Glider:
         self.y = y
         self.v = v
         self.theta = theta
-<<<<<<< HEAD
         self.timestep = 0.005
         self.rho = 0.125
         self.m = 0.5
-=======
-        self.timestep = 0.001
-        self.rho = 0.125
-        self.m = 100
->>>>>>> 46875c663b663593340aa23135cb45f032da82de
         self.F = 20
         self.Cx = 0.04
         self.Cy = 0.2
         self.t = 0
         self.g = 9.8
 
-<<<<<<< HEAD
     def set_contants(self, timestep, rho, m, F, Cx, Cy, g):
         self.timestep = timestep
         self.rho = rho
@@ -37,17 +27,6 @@ class Glider:
         self.Cy = Cy
         self.t = 0
         self.g = g
-=======
-    # def set_contants(self, timestep, rho, m, F, Cx, Cy, g):
-    #     self.timestep = timestep
-    #     self.rho = rho
-    #     self.m = m
-    #     self.F = F
-    #     self.Cx = Cx
-    #     self.Cy = Cy
-    #     self.t = 0
-    #     self.g = g
->>>>>>> 46875c663b663593340aa23135cb45f032da82de
 
     def get_t(self):
         return self.t
@@ -80,8 +59,4 @@ class Glider:
 
     def print_state(self):
         print("t={:.1f}, x={:.1f}, y={:.1f}, v={:.1f}, theta={:.1f}"
-<<<<<<< HEAD
               .format(self.t, self.x, self.y, self.v, self.theta / DEG_TO_RAD))
-=======
-              .format(self.t, self.x, self.y, self.v, self.theta * 180 / 3.14))
->>>>>>> 46875c663b663593340aa23135cb45f032da82de
